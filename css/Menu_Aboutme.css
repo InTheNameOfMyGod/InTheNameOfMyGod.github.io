@@ -1,0 +1,86 @@
+
+
+header {
+  background-color: rgb(255, 255, 255,0.1);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section{
+  max-width: 80%;
+  padding: 30px;
+  margin-left: 100px;
+  margin-top: 78px;
+  margin-bottom: 45px;
+  background-color:transparent;
+  backdrop-filter: blur(3px);
+  opacity: 20;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #ffffff;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+}
+section:hover{
+  backdrop-filter: blur(3px);
+  opacity: 20;
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px rgb(21, 255, 0);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.profile {
+  float: right;
+  margin-right: 10%;
+  margin-top: 1%;
+}
+.profile img {
+  border: none;
+  width: 380px;
+  height: auto;
+  margin-top: -120px;
+  margin-right: -100px;
+
+}
+
+.info {
+  overflow: hidden;
+}
+.maghrib {
+  margin-left: 4%;
+}
+
+footer {
+  background-color: rgb(255, 255, 255,0.1);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 0.8%;
+}

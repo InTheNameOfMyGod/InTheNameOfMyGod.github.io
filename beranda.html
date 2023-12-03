@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad YAH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/beranda.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="dropdown">
+                <button class="dropbtn">&#9776;</button>
+                <div class="dropdown-content">
+                    <a href="https://wa.me/6281339574206"><i class="fas fa-envelope"></i> Contact me</a>
+                    <a href="https://www.facebook.com/profile.php?id=100050398081756"><i class="fab fa-facebook"></i> About Me</a>
+                    <a href="00-Website.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-center">
+            <h1>SELAMAT DATANG</h1>
+        </div>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Telusuri">
+        <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="content-container">
+        <div class="tatakayo">
+            <div class="content-bio">
+                <h2>Hi, Saya Ahmad Rahman 😎😎</h2>
+                <ul>
+                    <li>Lahir di Kopeang pada tanggal 29 Maret 2005</li>
+                    <li>Alamat: Desa Ralleanak Utara, Kec. Aralle, Kab. Mamasa, Sulawesi Barat</li>
+                    <li>Anak kedua dari 4 bersaudara</li>
+                    <li>Mengambil jurusan Teknik Informatika tanpa ragu</li>
+                    <li>Sedang mengejar gelar di Universitas Sulawesi Barat</li>
+                    <li>Suka menjelajahi hal baru dan mudah bosan dengan rutinitas</li>
+                </ul>
+            </div>
+            <img src="gambar/aku.png" alt="Ahmad" class="jasad">
+        </div>
+        <hr>
+        
+        <hr>
+        <h1 class="mop">Konten Lainnya Dari Saya</h1>
+        <div class="other-content">
+            <div class="other-content">
+                <div class="content">
+                    <h3>Quote Dari Saya</h3>
+                    <p>Temukan quote menyentuh dan menarik dari saya.</p>
+                    <button><a href="halaman1.html">Baca Quote</a></button>
+                </div>
+                <div class="content">
+                    <h3>Tugas Media Web</h3>
+                    <p>Lihat Media Tugas Web saya dalam halaman ini.</p>
+                    <button><a href="tugaslalu.html">Lihat Media</a></button>
+                </div>
+                <div class="content">
+                    <h3>Galeri Gambar</h3>
+                    <p>Lihat koleksi gambar-gambar menarik.</p>
+                    <button><a href="galeri.html">Lihat Galeri</a></button>
+                </div>
+                <div class="content">
+                    <h3>Biodata Saya</h3>
+                    <p>Ini Adalah File Html saya Pada semester 1,tidak pernah saya rubah.</p>
+                    <button><a href="tihan1.html">Lihat Biodata</a></button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <hr>
+    <script>
+        const modal = document.getElementById('modal');
+        const modalImage = document.getElementById('modal-image');
+        const galleryImages = document.querySelectorAll('.gallery-image');
+        const closeModalButton = document.getElementById('close-modal');
+
+        function openModal(imageSrc) {
+            modalImage.src = imageSrc;
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+        galleryImages.forEach((image) => {
+            image.addEventListener('click', () => {
+                const imageSrc = image.getAttribute('src');
+                openModal(imageSrc);
+            });
+        });
+
+        closeModalButton.addEventListener('click', () => {
+            closeModal();
+        });
+
+        modal.addEventListener('click', () => {
+            closeModal();
+        });
+    </script>
+    <footer>
+        <p>&copy; 2023 Ahmad Rahman.</p>
+        <button class="leash">
+            <a href="portofolio.html" class="prev"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </button>
+    </footer>
+</body>
+</html>

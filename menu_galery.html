@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-image: url(Gambar//5197441.jpg);
+            background-size: cover;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            color: #ffffff;
+        }
+
+        aside {
+            width: 250px;
+            height: 500px;
+            background-color: rgb(255, 255, 255,0.3);
+            color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            box-sizing: border-box;
+            position: fixed;
+            margin-left: -70%;
+            margin-top: 3%;
+            display: flex;
+            flex-direction: column;
+        }
+        h2 {
+            text-align: center;
+        }
+
+        aside a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid rgb(21, 255, 0);
+        }
+
+        button {
+            margin-top: auto; 
+            background-color: rgb(21, 255, 0);
+            color: #fff;
+            border: none;
+            padding: 5px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin-left: 490px;
+            margin-right: 100px;
+            margin-top: 50px;
+        }
+
+        img {
+            max-width: 30%;
+            max-height: 12%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border-radius: 20px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        img:hover{
+            transform: scale(1.03);
+            box-shadow: 0 0 20px rgba(36, 250, 8, 0.9);
+            transition: 0.3s;
+        }
+
+        video {
+            max-width: 90%;
+            height: auto;
+            object-fit: cover;
+            margin-top: 20px;
+            border-radius: 20px;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color:  rgb(255, 255, 255,0.3);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <aside>
+            <h2>Galeri</h2>
+            <a href="#foto"><i class="fas fa-image"></i> Foto</a>
+            <a href="#video"><i class="fas fa-video"></i> Video</a>         
+            <button><a href="portofolio.html"><i class="fas fas fa-sign-out-alt"></i> Keluar</a></button>
+        </aside>
+
+        <main>
+            <h2 id="foto">Foto</h2>
+            <img src="Gambar/ahmad.jpg" alt="Foto 1">
+            <img src="Gambar/Kebiasaan  Buruk.jpg" alt="Foto 2">
+            <img src="Gambar/IMG-20210126-WA0018.jpg" alt="Foto 3">
+            <img src="Gambar/IMG_20230419_131931.jpg" alt="Foto 4">
+            <img src="Gambar/IMG-20200420-WA0030-1.jpg" alt="Foto 5">
+            <img src="Gambar/IMG_20231019_070625.jpg" alt="Foto 6">
+            <br>
+            <hr>
+            <h2 id="video">Video</h2>
+            <video controls>
+                <source src="Gambar/Energi Yang Panglima Buliang Ren.mp4" type="video/mp4">
+                Deskripsi Video 1
+            </video>
+            <video controls>
+                <source src="Gambar/Yunxi Dan Moxi Shihao.mp4" type="video/mp4">
+                Deskripsi Video 3
+            </video>
+        </main>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hak Cipta Anda</p>
+    </footer>
+</body>
+</html>

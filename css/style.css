@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    height: 20vh;
+}
+
+nav {
+    width: 70%;
+    height: 10%;
+    background-color: rgba(51, 51, 51, 0.6);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 32px 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+}
+
+nav a i {
+    margin-right: 5px;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+main {
+    text-align: center;
+}
+
+.produk {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 25px;
+    position: relative;
+}
+
+.produk li {
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.produk img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produk img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+}
+
+.nama {
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #ffffff;
+}
+
+button {
+    margin-top: 3%;
+    margin-left: 46%;
+    border-radius: 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80vw;
+    max-height: 80vh;
+    overflow: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.close:hover {
+    color: black;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-details {
+    text-align: left;
+    margin-left: 20px;
+}
+
+#modal-text {
+    text-align: center;
+}
+
+#modal-image {
+    max-height: 50vh;
+    width: 60vh;
+}
+
+nav .submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav .submenu li {
+    padding: 10px;
+}
+
+nav .submenu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav .dropdown:hover .submenu {
+    display: block;
+}
